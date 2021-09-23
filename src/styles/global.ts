@@ -28,6 +28,8 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     min-height: 100vh;
-    background-color: #393E46;
+    margin-left: 10rem;
+    background-color: var(--black-color);
+    font: 400 1rem 'JetBrains Mono', monospace;
   }
 `
