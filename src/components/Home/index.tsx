@@ -1,6 +1,6 @@
-import { Container } from './styles'
 import { useTypedText } from '../../utils/useTypedText'
 
+import { Container } from './styles'
 import ProfileImg from '../../assets/fotoPerfil.jpeg'
 
 export function Home() {
@@ -17,7 +17,7 @@ export function Home() {
         </h1>
         <h3>
           {useTypedText(
-            "Here I'm gonna show some of my works and a little about me. I'm currently studiyng front-end development with React.js and Typescript, I live in Paraná, Brasil!",
+            "Here I'm gonna show some of my works and a little about me. I'm currently studiyng front-end development with React.js and Typescript.",
             30,
             250
           )}

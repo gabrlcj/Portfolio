@@ -8,6 +8,17 @@ export const Container = styled.main`
 
   height: 100vh;
   padding: 2rem;
+  animation: fadeIn 2s forwards;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 
   .img-content {
     display: flex;
@@ -21,6 +32,20 @@ export const Container = styled.main`
       border-radius: 6rem;
       border: 3px solid var(--white-color);
       filter: saturate(115%);
+      box-shadow: 0 0 0.5rem 0.35rem rgba(255, 255, 255, 0.2);
+      animation: float1 3s infinite;
+
+      @keyframes float1 {
+        0% {
+          transform: translate(0, 0);
+        }
+        50% {
+          transform: translate(0, 0.5rem);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+      }
     }
   }
 

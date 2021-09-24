@@ -29,6 +29,7 @@ export const Container = styled.nav`
     gap: 3.5rem;
 
     padding: 1rem;
+    margin-top: -5rem;
     width: 100%;
     list-style: none;
 
@@ -61,6 +62,15 @@ export const Container = styled.nav`
           width: 100%;
           color: var(--primary-color);
         }
+      }
+    }
+
+    .active {
+      filter: saturate(200%);
+
+      &::after {
+        width: 100%;
+        color: var(--primary-color);
       }
     }
   }
@@ -99,7 +109,7 @@ export const Socials = styled.div`
     }
 
     svg {
-      font-size: 2.125rem;
+      font-size: 2rem;
     }
   }
 `
