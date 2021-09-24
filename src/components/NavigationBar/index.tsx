@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Container, Socials } from './styles'
-import InitialsImage from '../../assets/G.B..svg'
+import InitialsImage from '../../assets/Logo.svg'
 
 import { IoLogoGithub, IoMailOutline, IoLogoLinkedin } from 'react-icons/io5'
 

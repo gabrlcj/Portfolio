@@ -13,9 +13,9 @@ export const Container = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--black-color);
+  background-color: #272121;
   border-radius: 0 0.75rem 0.75rem 0;
-  box-shadow: 0 0 0.5rem 0.15rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.5rem 0.75rem 0.2rem rgba(0, 0, 0, 0.9);
 
   img {
     height: 3rem;
@@ -99,7 +99,7 @@ export const Socials = styled.div`
     }
 
     svg {
-      font-size: 1.75rem;
+      font-size: 2.125rem;
     }
   }
 `
