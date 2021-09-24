@@ -1,10 +1,11 @@
 import { createGlobalStyle } from 'styled-components'
+import BackgroundImage from '../assets/background.svg'
 
 export const GlobalStyle = createGlobalStyle`
   :root {
     --black-color: #222831;
     --brown-color: #443737;
-    --white-color: #EEEEEE;
+    --white-color: #E6E6E6;
 
     --primary-color: #FF4D00;
     --secondary-color: #FF0000;
@@ -32,5 +33,8 @@ export const GlobalStyle = createGlobalStyle`
     margin-left: 10rem;
     background-color: var(--brown-color);
     font: 400 1rem 'JetBrains Mono', monospace;
+    background: url(${BackgroundImage}) no-repeat;
+    background-position: center center;
+    background-size: cover;
   }
 `
