@@ -2,12 +2,13 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --black-color: #393E46;
-    --white-color: #f0f0e4;
+    --black-color: #222831;
+    --brown-color: #443737;
+    --white-color: #EEEEEE;
 
-    --primary-color: #DB5F29;
-    --secondary-color: #68BDE1;
-    --alternative-color: #7B3C3C;
+    --primary-color: #FF4D00;
+    --secondary-color: #FF0000;
+    --alternative-color: #68BDE1;
   }
 
   * {
@@ -29,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     min-height: 100vh;
     margin-left: 10rem;
-    background-color: var(--black-color);
+    background-color: var(--brown-color);
     font: 400 1rem 'JetBrains Mono', monospace;
   }
 `
