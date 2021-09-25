@@ -19,9 +19,9 @@ import {
 export function About() {
   return (
     <Container>
-      <h1>{useTypedText('About me', 75, 30)}</h1>
+      <h1>{useTypedText('About me', 50, 20)}</h1>
       <ApresentationBox>
-        <h2>{useTypedText('Biography', 80, 35)}</h2>
+        <h2>{useTypedText('Biography', 60, 25)}</h2>
         <h3>
           Hi people, this is a section more about me I started studiyng
           front-end programming this year with HTML and CSS, from there on I
@@ -54,8 +54,8 @@ export function About() {
         <h2>
           {useTypedText(
             "Languages and tools I'm learning & I'm working with:",
-            80,
-            35
+            60,
+            25
           )}
         </h2>
         <div className="icons-container">
