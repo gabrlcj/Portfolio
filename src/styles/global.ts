@@ -8,8 +8,8 @@ export const GlobalStyle = createGlobalStyle`
     --white-color: #E6E6E6;
 
     --primary-color: #FF4D00;
-    --secondary-color: #FF0000;
-    --alternative-color: #68BDE1;
+    --secondary-color: #E79E4F;
+    --alternative-color: #00A19D;
   }
 
   * {
@@ -33,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
     margin-left: 10rem;
     background-color: var(--brown-color);
     font: 400 1rem 'JetBrains Mono', monospace;
-    background: url(${BackgroundImage}) no-repeat;
+    background: url(${BackgroundImage}) repeat-y;
     background-position: center center;
     background-size: cover;
   }
