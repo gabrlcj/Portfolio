@@ -16,6 +16,8 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
   }
 
   html {
@@ -36,5 +38,39 @@ export const GlobalStyle = createGlobalStyle`
     background: url(${BackgroundImage}) repeat-y;
     background-position: center center;
     background-size: cover;
+  }
+
+  &::-webkit-scrollbar {
+    background: var(--brown-color);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .divider-1 {
+    height: 3px;
+    margin: 4rem 0;
+    background: linear-gradient(
+      270deg,
+      var(--primary-color),
+      var(--brown-color)
+    );
+  }
+
+  .divider-2 {
+    height: 3px;
+    margin: 4rem 0;
+    background: linear-gradient(
+      270deg,
+      var(--brown-color),
+      var(--primary-color)
+    );
   }
 `
