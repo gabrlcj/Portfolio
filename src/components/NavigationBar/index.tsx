@@ -3,20 +3,41 @@ import { Container, Socials } from './styles'
 import InitialsImage from '../../assets/Logo.svg'
 
 import { IoLogoGithub, IoMailOutline, IoLogoLinkedin } from 'react-icons/io5'
+import { useState } from 'react'
 
 export function NavBar() {
+  const [active, setActive] = useState(0)
+
   return (
     <Container>
       <img src={InitialsImage} alt="Initials of my name" />
       <li>
         <ul>
-          <Link to="/">Home</Link>
+          <Link
+            to="/"
+            onClick={() => setActive(1)}
+            className={active === 1 ? 'active' : ''}
+          >
+            Home
+          </Link>
         </ul>
         <ul>
-          <Link to="/about">About</Link>
+          <Link
+            to="/about"
+            onClick={() => setActive(2)}
+            className={active === 2 ? 'active' : ''}
+          >
+            About
+          </Link>
         </ul>
         <ul>
-          <Link to="/projects">Projects</Link>
+          <Link
+            to="/projects"
+            onClick={() => setActive(3)}
+            className={active === 3 ? 'active' : ''}
+          >
+            Projects
+          </Link>
         </ul>
       </li>
       <Socials>

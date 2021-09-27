@@ -66,7 +66,7 @@ export const Container = styled.nav`
     }
 
     .active {
-      filter: saturate(200%);
+      filter: saturate(180%);
 
       &::after {
         width: 100%;

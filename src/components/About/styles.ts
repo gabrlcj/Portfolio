@@ -1,10 +1,9 @@
 import styled from 'styled-components'
 
 export const Container = styled.main`
-  height: 100vh;
   padding: 2rem;
   line-height: 2.5rem;
-  animation: fadeIn 2s forwards;
+  animation: fadeIn 3s forwards;
 
   @keyframes fadeIn {
     0% {

@@ -23,24 +23,24 @@ export function About() {
       <ApresentationBox>
         <h2>{useTypedText('Biography', 60, 25)}</h2>
         <h3>
-          Hi people, this is a section more about me I started studiyng
-          front-end programming this year with HTML and CSS, from there on I
-          went to Javascript, and when I got more confident with the language I
-          began with React.js 😁.
+          Hi people, this is the section about me. I started studiyng front-end
+          programming this year with HTML and CSS, from there on I went to
+          Javascript and, when I got more confident with the language, I started
+          studying React.js 😁.
         </h3>
         <section>
           <img src={Ilustration} alt="Ilustration of man playing video games" />
           <div className="bio-container">
             <h3>
-              I live in Paraná, Brasil and I'm pursuing my first job as a
-              front-end programmer, very excited to have this experience. I'm
-              currently on career transition.
+              I'm currently on career transition. I live in Paraná, Brasil and
+              I'm pursuing my first job as a front-end programmer, very excited
+              to have this experience.
             </h3>
             <h3>
-              I have some experience working with a team from a hackathon that I
-              participate and individual experience with some projects that I
-              use to practice some of the languages I'm trying to know and work
-              with.
+              I had a amazing experience making part of a hackathon where I
+              learned to work with a full team, developers and designers, and my
+              individual experience working on my projects and doing some
+              courses.
             </h3>
             <h3>
               Some of my hobbies are play video games with my friends 🎮, hang
@@ -48,8 +48,13 @@ export function About() {
             </h3>
           </div>
         </section>
+        <h3>
+          With you wanna contact me you can by this email:{' '}
+          <strong>gabrielbittencourt57@gmail.com</strong>, or by my social
+          medias on the navigation bar on the side.
+        </h3>
       </ApresentationBox>
-      <br />
+      <div className="divider-1"></div>
       <ApresentationBox>
         <h2>
           {useTypedText(
