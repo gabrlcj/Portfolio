@@ -16,8 +16,8 @@ export const Container = styled.main`
   }
 
   h1 {
-    font-size: 4rem;
-    color: var(--secondary-color);
+    font-size: 3rem;
+    color: var(--primary-color);
     margin: 2rem 0 3rem 3rem;
     text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
   }
