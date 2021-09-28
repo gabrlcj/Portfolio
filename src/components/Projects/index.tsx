@@ -1,3 +1,9 @@
+import { Container } from './styles'
+
 export function Projects() {
-  return <h1>My projects</h1>
+  return (
+    <Container>
+      <h1>Projects</h1>
+    </Container>
+  )
 }
