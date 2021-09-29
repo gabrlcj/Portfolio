@@ -50,10 +50,18 @@ export const ApresentationBox = styled.div`
     justify-content: space-around;
     gap: 2.5rem;
 
+    @media (max-width: 1080px) {
+      flex-direction: column;
+    }
+
     img {
       margin-top: 1rem;
       width: 25rem;
       animation: float2 3s infinite;
+
+      @media (max-width: 1080px) {
+        width: 20rem;
+      }
 
       @keyframes float2 {
         0% {

@@ -6,9 +6,14 @@ export const Container = styled.div`
   justify-items: center;
   justify-content: center;
   gap: 1rem;
-  grid-template-columns: repeat(4, 20%);
-  grid-template-rows: 10rem 10rem 10rem;
-  position: relative;
+  grid-template-columns: repeat(4, 23%);
+  grid-template-rows: repeat(3, 10rem);
+
+  @media (max-width: 1080px) {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-rows: auto;
+    gap: 1.5rem;
+  }
 
   div {
     display: flex;

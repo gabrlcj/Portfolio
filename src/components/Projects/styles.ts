@@ -69,8 +69,13 @@ export const ProjectsContainer = styled.section`
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 25rem 25rem 25rem;
+  grid-template-rows: repeat(3, 25rem);
   gap: 2rem;
+
+  @media (max-width: 1080px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 25rem);
+  }
 
   .project {
     border-radius: 1rem;

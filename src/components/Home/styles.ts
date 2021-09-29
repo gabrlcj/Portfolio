@@ -11,6 +11,10 @@ export const Container = styled.main`
   line-height: 2.5rem;
   animation: fadeIn 3s forwards;
 
+  @media (max-width: 1080px) {
+    flex-direction: column;
+  }
+
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -25,16 +29,19 @@ export const Container = styled.main`
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 40vw;
 
     img {
-      width: 25rem;
-      border-radius: 6rem;
+      width: 20rem;
+      border-radius: 5rem;
       border: 3px solid var(--white-color);
       filter: saturate(115%);
       box-shadow: 0 0 0.5rem 0.35rem rgba(255, 255, 255, 0.2);
       animation: float1 3s infinite;
+
+      @media (max-width: 1080px) {
+        width: 15rem;
+      }
 
       @keyframes float1 {
         0% {
@@ -55,8 +62,11 @@ export const Container = styled.main`
     align-items: left;
     justify-content: center;
     flex-direction: column;
-
     width: 60vw;
+
+    @media (max-width: 1080px) {
+      width: 100%;
+    }
 
     h1 {
       color: var(--primary-color);
