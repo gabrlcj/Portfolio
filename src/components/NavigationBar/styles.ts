@@ -18,7 +18,8 @@ export const Container = styled.nav`
   box-shadow: 0 0.5rem 0.75rem 0.2rem rgba(0, 0, 0, 0.9);
 
   img {
-    height: 3rem;
+    height: auto;
+    max-width: 95%;
   }
 
   li {

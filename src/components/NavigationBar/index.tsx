@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { Container, Socials } from './styles'
-import InitialsImage from '../../assets/Logo.svg'
+import Logo from '../../assets/Logo-name.png'
 import { IoLogoGithub, IoMailOutline, IoLogoLinkedin } from 'react-icons/io5'
 
 export function NavBar() {
@@ -10,7 +10,7 @@ export function NavBar() {
 
   return (
     <Container>
-      <img src={InitialsImage} alt="Initials of my name" />
+      <img src={Logo} alt="Logo of the project" />
       <li>
         <ul>
           <Link
