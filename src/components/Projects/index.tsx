@@ -1,6 +1,8 @@
 import { useTypedText } from '../../utils/useTypedText'
+
 import { Container, ProjectsContainer } from './styles'
 import { IoLogoGithub, IoLink } from 'react-icons/io5'
+import { Footer } from '../Footer'
 
 export function Projects() {
   return (
@@ -122,6 +124,8 @@ export function Projects() {
           <p>Calculator with different themes.</p>
         </div>
       </ProjectsContainer>
+      <div className="divider-1"></div>
+      <Footer />
     </Container>
   )
 }

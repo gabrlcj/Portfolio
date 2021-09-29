@@ -1,7 +1,7 @@
 import { useTypedText } from '../../utils/useTypedText'
 
-import { Container } from './styles'
 import ProfileImg from '../../assets/fotoPerfil.jpeg'
+import { Container } from './styles'
 
 export function Home() {
   return (

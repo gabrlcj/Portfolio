@@ -1,12 +1,12 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+
 import { Container, Socials } from './styles'
 import InitialsImage from '../../assets/Logo.svg'
-
 import { IoLogoGithub, IoMailOutline, IoLogoLinkedin } from 'react-icons/io5'
-import { useState } from 'react'
 
 export function NavBar() {
-  const [active, setActive] = useState(0)
+  const [active, setActive] = useState('')
 
   return (
     <Container>
@@ -15,8 +15,8 @@ export function NavBar() {
         <ul>
           <Link
             to="/"
-            onClick={() => setActive(1)}
-            className={active === 1 ? 'active' : ''}
+            onClick={() => setActive('home')}
+            className={active === 'home' ? 'active' : ''}
           >
             Home
           </Link>
@@ -24,8 +24,8 @@ export function NavBar() {
         <ul>
           <Link
             to="/about"
-            onClick={() => setActive(2)}
-            className={active === 2 ? 'active' : ''}
+            onClick={() => setActive('about')}
+            className={active === 'about' ? 'active' : ''}
           >
             About
           </Link>
@@ -33,8 +33,8 @@ export function NavBar() {
         <ul>
           <Link
             to="/projects"
-            onClick={() => setActive(3)}
-            className={active === 3 ? 'active' : ''}
+            onClick={() => setActive('projects')}
+            className={active === 'projects' ? 'active' : ''}
           >
             Projects
           </Link>

@@ -22,14 +22,19 @@ export const Container = styled.main`
     text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
   }
 
-  h3 {
-    color: var(--white-color);
-  }
-
   h2 {
     color: var(--secondary-color);
     margin-bottom: 1rem;
     text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+  }
+
+  h3 {
+    color: var(--white-color);
+
+    strong {
+      text-decoration: underline;
+      color: var(--secondary-color);
+    }
   }
 `
 
@@ -69,45 +74,6 @@ export const ApresentationBox = styled.div`
       justify-content: space-around;
       flex-direction: column;
       gap: 3rem;
-    }
-  }
-
-  .icons-container {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    gap: 1rem;
-    grid-template-columns: repeat(4, 20%);
-    grid-template-rows: 10rem 10rem 10rem;
-    position: relative;
-
-    div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-
-      svg {
-        color: var(--white-color);
-        width: 5rem;
-        height: 5rem;
-
-        transition: transform ease 0.3s;
-
-        &:hover {
-          transform: translateY(-25%);
-        }
-      }
-
-      strong {
-        margin-top: 0.75rem;
-        color: var(--white-color);
-        background: rgba(0, 0, 0, 0.1);
-        border-radius: 0.5rem;
-        padding: 0 0.75rem;
-        text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
-      }
     }
   }
 `
