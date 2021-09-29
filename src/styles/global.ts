@@ -31,7 +31,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    min-height: 100vh;
     margin-left: 10rem;
     background-color: var(--brown-color);
     font: 400 1rem 'JetBrains Mono', monospace;
