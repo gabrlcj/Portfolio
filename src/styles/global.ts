@@ -47,18 +47,18 @@ export const GlobalStyle = createGlobalStyle`
     display: none;
     visibility: hidden;
 
+    margin: 2rem 0 0 2rem;
+    height: 3rem;
+    font-size: 3rem;
+    color: var(--primary-color);
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    border: 0;
+    cursor: pointer;
+
     @media (max-width: 720px) {
       display: inline;
       visibility: visible;
-      margin: 2rem 0 0 2rem;
-
-      height: 3rem;
-      font-size: 3rem;
-      color: var(--primary-color);
-      background: rgba(0, 0, 0, 0.2);
-      border-radius: 0.5rem;
-      border: 0;
-      cursor: pointer;
     }
   }
 

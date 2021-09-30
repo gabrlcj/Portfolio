@@ -6,7 +6,7 @@ export const Container = styled.main`
   justify-content: center;
   gap: 1.5rem;
 
-  height: 100vh;
+  min-height: 100vh;
   padding: 2rem;
   line-height: 2.5rem;
   animation: fadeIn 3s forwards;
@@ -18,7 +18,6 @@ export const Container = styled.main`
 
   @media (max-width: 720px) {
     justify-content: start;
-    height: auto;
   }
 
   @keyframes fadeIn {

@@ -11,9 +11,9 @@ export function Home() {
       </div>
       <div className="text-content">
         <h1>
-          {useTypedText("Hi, I'm Gabriel.", 40)}
+          {useTypedText("Hi, I'm Gabriel.", 35)}
           <br />
-          {useTypedText('Welcome to my personal portfolio!', 45, 100)}
+          {useTypedText('Welcome to my personal portfolio!', 40, 100)}
         </h1>
         <h3>
           {useTypedText(
