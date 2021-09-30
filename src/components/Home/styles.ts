@@ -12,7 +12,13 @@ export const Container = styled.main`
   animation: fadeIn 3s forwards;
 
   @media (max-width: 1080px) {
+    gap: 5rem;
     flex-direction: column;
+  }
+
+  @media (max-width: 720px) {
+    justify-content: start;
+    height: auto;
   }
 
   @keyframes fadeIn {
