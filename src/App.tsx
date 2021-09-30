@@ -1,11 +1,11 @@
-import { Home } from './components/Home'
-import { NavBar } from './components/NavigationBar'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-
-import { GlobalStyle } from './styles/global'
+import { NavBar } from './components/NavigationBar'
+import { Home } from './components/Home'
 import { About } from './components/About'
 import { Projects } from './components/Projects'
 import { ButtonGoToTop } from './components/ButtonGoToTop'
+
+import { GlobalStyle } from './styles/global'
 
 function App() {
   return (

@@ -1,13 +1,12 @@
-import { useTypedText } from '../../utils/useTypedText'
-
-import { Container, ProjectsContainer } from './styles'
-import { IoLogoGithub, IoLink } from 'react-icons/io5'
 import { Footer } from '../Footer'
+
+import { IoLogoGithub, IoLink } from 'react-icons/io5'
+import { Container, ProjectsContainer } from './styles'
 
 export function Projects() {
   return (
     <Container>
-      <h1>{useTypedText('Personal projects', 40, 100)}</h1>
+      <h1>Personal projects</h1>
       <ProjectsContainer>
         <div className="project orangespace">
           <h2>

@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import { Container, Socials } from './styles'
 import Logo from '../../assets/Logo-name.png'
-import { IoLogoGithub, IoMailOutline, IoLogoLinkedin } from 'react-icons/io5'
 import { BiMenuAltLeft } from 'react-icons/bi'
+import { IoLogoGithub, IoMailOutline, IoLogoLinkedin } from 'react-icons/io5'
+import { Container, Socials } from './styles'
 
 export function NavBar() {
   const [active, setActive] = useState('')

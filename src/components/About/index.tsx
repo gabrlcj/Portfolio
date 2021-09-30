@@ -1,14 +1,13 @@
-import { useTypedText } from '../../utils/useTypedText'
 import { IconsContainer } from '../IconsContainer'
+import { Footer } from '../Footer'
 
 import Ilustration from '../../assets/Image-about.svg'
 import { ApresentationBox, Container } from './styles'
-import { Footer } from '../Footer'
 
 export function About() {
   return (
     <Container>
-      <h1>{useTypedText('About me', 40, 100)}</h1>
+      <h1>About me</h1>
       <ApresentationBox>
         <h2>Biography</h2>
         <h3>

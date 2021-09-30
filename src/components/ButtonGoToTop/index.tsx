@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
-import { BackToTop } from './styles'
+
 import { FiChevronsUp } from 'react-icons/fi'
+import { BackToTop } from './styles'
 
 export function ButtonGoToTop() {
   const [visible, setVisible] = useState(false)

@@ -1,4 +1,3 @@
-import { Container } from './styles'
 import {
   SiCss3,
   SiGit,
@@ -13,6 +12,7 @@ import {
   SiTypescript,
   SiYarn,
 } from 'react-icons/si'
+import { Container } from './styles'
 
 export function IconsContainer() {
   return (
