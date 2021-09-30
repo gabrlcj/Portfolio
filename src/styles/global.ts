@@ -16,8 +16,6 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-    -moz-scroll-behavior: smooth;
   }
 
   html {
@@ -37,6 +35,8 @@ export const GlobalStyle = createGlobalStyle`
     background: url(${BackgroundImage}) repeat-y;
     background-position: center center;
     background-size: cover;
+    scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
 
     @media (max-width: 720px) {
       margin-left: 0;
