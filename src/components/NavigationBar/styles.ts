@@ -17,14 +17,17 @@ export const Container = styled.nav`
   border-radius: 0 0.75rem 0.75rem 0;
   box-shadow: 0 0.5rem 0.75rem 0.2rem rgba(0, 0, 0, 0.9);
 
-  transition: left ease 0.5s;
+  transition: transform ease 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
 
   &.hidden {
-    left: 0;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
   }
 
   @media (max-width: 720px) {
-    left: -100%;
+    transform: translateX(-105%);
+    -webkit-transform: translateX(-105%);
   }
 
   img {
