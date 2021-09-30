@@ -17,8 +17,7 @@ export const Container = styled.nav`
   border-radius: 0 0.75rem 0.75rem 0;
   box-shadow: 0 0.5rem 0.75rem 0.2rem rgba(0, 0, 0, 0.9);
 
-  transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
+  transition: left ease 0.5s;
 
   &.hidden {
     left: 0;
