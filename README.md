@@ -4,6 +4,14 @@
   <strong>Repositorio para o meu portfolio pessoal.</strong>
 </div>
 
+<br />
+
+<div align="center">
+  <a href="https://gabriel-bittencourt.vercel.app/"><img src="https://img.shields.io/static/v1?label=&message=Vercel&color=%23000000&style=for-the-badge&logo=vercel" alt="Vercel"></a>
+  <br/>
+  <strong>Deploy da aplicação ⬆️</strong>
+</div>
+
 ---
 
 ## 📝 Sobre
