@@ -38,7 +38,6 @@ export const GlobalStyle = createGlobalStyle`
     background-size: cover;
     scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
-    overscroll-behavior: none;
 
     @media (max-width: 720px) {
       margin-left: 0;

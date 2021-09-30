@@ -14,7 +14,7 @@ export function ButtonGoToTop() {
 
   useEffect(() => {
     function toggleVisibility() {
-      if (window.scrollY >= 150) {
+      if (window.scrollY >= 275) {
         setVisible(true)
       } else {
         setVisible(false)

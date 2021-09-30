@@ -7,7 +7,7 @@ import { Footer } from '../Footer'
 export function Projects() {
   return (
     <Container>
-      <h1>{useTypedText('Personal projects', 40, 20)}</h1>
+      <h1>{useTypedText('Personal projects', 40, 100)}</h1>
       <ProjectsContainer>
         <div className="project orangespace">
           <h2>

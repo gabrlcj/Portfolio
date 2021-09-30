@@ -8,9 +8,9 @@ import { Footer } from '../Footer'
 export function About() {
   return (
     <Container>
-      <h1>{useTypedText('About me', 35, 10)}</h1>
+      <h1>{useTypedText('About me', 40, 100)}</h1>
       <ApresentationBox>
-        <h2>{useTypedText('Biography', 40, 30)}</h2>
+        <h2>Biography</h2>
         <h3>
           Hi people, this is the section about me. I started studiyng front-end
           programming this year with HTML and CSS, from there on I went to
@@ -44,13 +44,7 @@ export function About() {
       </ApresentationBox>
       <div className="divider-1"></div>
       <ApresentationBox>
-        <h2>
-          {useTypedText(
-            "Languages and tools I'm learning & I'm working with:",
-            40,
-            30
-          )}
-        </h2>
+        <h2>Languages and tools I'm learning and I'm working with:</h2>
         <IconsContainer />
       </ApresentationBox>
       <div className="divider-2"></div>

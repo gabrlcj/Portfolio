@@ -84,7 +84,7 @@ export const ProjectsContainer = styled.section`
       background: url(${OrangeSpace}) no-repeat;
       background-size: cover;
       background-position: center;
-      animation: fadeIn 3.5s forwards;
+      animation: fadeIn 2s forwards;
 
       @keyframes fadeIn {
         0% {
@@ -101,7 +101,7 @@ export const ProjectsContainer = styled.section`
       background: url(${dtmoney}) no-repeat;
       background-size: cover;
       background-position: center;
-      animation: fadeIn 4s forwards;
+      animation: fadeIn 2s forwards;
 
       @keyframes fadeIn {
         0% {
@@ -118,7 +118,7 @@ export const ProjectsContainer = styled.section`
       background: url(${PopularRepos}) no-repeat;
       background-size: cover;
       background-position: center;
-      animation: fadeIn 4.5s forwards;
+      animation: fadeIn 2.5s forwards;
 
       @keyframes fadeIn {
         0% {
@@ -135,7 +135,7 @@ export const ProjectsContainer = styled.section`
       background: url(${RandomQuote}) no-repeat;
       background-size: cover;
       background-position: center;
-      animation: fadeIn 5s forwards;
+      animation: fadeIn 2.5s forwards;
 
       @keyframes fadeIn {
         0% {
@@ -152,7 +152,7 @@ export const ProjectsContainer = styled.section`
       background: url(${BarberShop}) no-repeat;
       background-size: cover;
       background-position: center;
-      animation: fadeIn 5.5s forwards;
+      animation: fadeIn 3s forwards;
 
       @keyframes fadeIn {
         0% {
@@ -169,7 +169,7 @@ export const ProjectsContainer = styled.section`
       background: url(${Calculator}) no-repeat;
       background-size: cover;
       background-position: center;
-      animation: fadeIn 6s forwards;
+      animation: fadeIn 3s forwards;
 
       @keyframes fadeIn {
         0% {
