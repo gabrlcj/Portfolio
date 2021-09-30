@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { GlobalStyle } from './styles/global'
 import { About } from './components/About'
 import { Projects } from './components/Projects'
+import { ButtonGoToTop } from './components/ButtonGoToTop'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Home />
         </Route>
       </Switch>
+      <ButtonGoToTop />
     </Router>
   )
 }
