@@ -38,9 +38,8 @@ export function About() {
           </div>
         </section>
         <h3>
-          With you wanna contact me you can by this email:{' '}
-          <strong>gabrielbittencourt57@gmail.com</strong>, or by my social
-          medias on the navigation bar on the side.
+          With you wanna contact me you can by my email on the navigation bar,
+          or by my social medias on the navigation bar too.
         </h3>
       </ApresentationBox>
       <div className="divider-1"></div>

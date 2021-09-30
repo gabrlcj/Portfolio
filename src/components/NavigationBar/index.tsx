@@ -4,65 +4,85 @@ import { Link } from 'react-router-dom'
 import { Container, Socials } from './styles'
 import Logo from '../../assets/Logo-name.png'
 import { IoLogoGithub, IoMailOutline, IoLogoLinkedin } from 'react-icons/io5'
+import { BiMenuAltLeft } from 'react-icons/bi'
 
 export function NavBar() {
   const [active, setActive] = useState('')
+  const [hidden, setHidden] = useState(false)
+
+  function handleNavBar() {
+    if (window.innerWidth <= 720) setHidden(!hidden)
+  }
 
   return (
-    <Container>
-      <img src={Logo} alt="Logo of the project" />
-      <li>
-        <ul>
-          <Link
-            to="/"
-            onClick={() => setActive('home')}
-            className={active === 'home' ? 'active' : ''}
+    <>
+      <button className="menu-icon" onClick={handleNavBar}>
+        <BiMenuAltLeft />
+      </button>
+      <Container className={hidden === true ? 'hidden' : ''}>
+        <img src={Logo} alt="Logo of the project" />
+        <li>
+          <ul>
+            <Link
+              to="/"
+              onClick={() => {
+                setActive('home')
+                handleNavBar()
+              }}
+              className={active === 'home' ? 'active' : ''}
+            >
+              Home
+            </Link>
+          </ul>
+          <ul>
+            <Link
+              to="/about"
+              onClick={() => {
+                setActive('about')
+                handleNavBar()
+              }}
+              className={active === 'about' ? 'active' : ''}
+            >
+              About
+            </Link>
+          </ul>
+          <ul>
+            <Link
+              to="/projects"
+              onClick={() => {
+                setActive('projects')
+                handleNavBar()
+              }}
+              className={active === 'projects' ? 'active' : ''}
+            >
+              Projects
+            </Link>
+          </ul>
+        </li>
+        <Socials>
+          <a
+            href="https://github.com/gabrlcj"
+            target="_blank"
+            rel="noreferrer noopener"
           >
-            Home
-          </Link>
-        </ul>
-        <ul>
-          <Link
-            to="/about"
-            onClick={() => setActive('about')}
-            className={active === 'about' ? 'active' : ''}
+            <IoLogoGithub />
+          </a>
+          <a
+            href="mailto:gabrielbittencourt57@gmail.com"
+            target="_blank"
+            rel="noreferrer noopener"
           >
-            About
-          </Link>
-        </ul>
-        <ul>
-          <Link
-            to="/projects"
-            onClick={() => setActive('projects')}
-            className={active === 'projects' ? 'active' : ''}
+            <IoMailOutline />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/gabrielbittencourtpenteado/"
+            target="_blank"
+            rel="noreferrer noopener"
           >
-            Projects
-          </Link>
-        </ul>
-      </li>
-      <Socials>
-        <a
-          href="https://github.com/gabrlcj"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <IoLogoGithub />
-        </a>
-        <a
-          href="mailto:gabrielbittencourt57@gmail.com"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <IoMailOutline />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/gabrielbittencourtpenteado/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <IoLogoLinkedin />
-        </a>
-      </Socials>
-    </Container>
+            <IoLogoLinkedin />
+          </a>
+        </Socials>
+      </Container>
+    </>
   )
 }

@@ -17,6 +17,16 @@ export const Container = styled.nav`
   border-radius: 0 0.75rem 0.75rem 0;
   box-shadow: 0 0.5rem 0.75rem 0.2rem rgba(0, 0, 0, 0.9);
 
+  transition: all ease 0.4s;
+
+  &.hidden {
+    left: 0;
+  }
+
+  @media (max-width: 720px) {
+    left: -100%;
+  }
+
   img {
     height: auto;
     max-width: 95%;
