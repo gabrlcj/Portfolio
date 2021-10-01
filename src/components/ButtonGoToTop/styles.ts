@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const BackToTop = styled.button`
+  display: flex;
+  align-items: center;
   position: fixed;
   bottom: 1.6rem;
   right: 1.6rem;
