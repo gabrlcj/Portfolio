@@ -103,7 +103,7 @@ export const Socials = styled.div`
 
     &:nth-child(1) {
       &:hover {
-        color: #181717;
+        color: #f0f6fc;
         transform: translateY(-20%);
       }
     }
