@@ -10,7 +10,7 @@ export const Container = styled.footer`
   justify-content: center;
 
   h4 {
-    color: var(--secondary-color);
+    color: var(--white-color);
     font-size: 1rem;
   }
 `
