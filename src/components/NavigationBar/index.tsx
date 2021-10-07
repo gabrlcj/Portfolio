@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import Logo from '../../assets/Logo-name.png'
 import { BiMenuAltLeft } from 'react-icons/bi'
@@ -7,7 +7,6 @@ import { IoLogoGithub, IoMailOutline, IoLogoLinkedin } from 'react-icons/io5'
 import { Container, Socials } from './styles'
 
 export function NavBar() {
-  const [active, setActive] = useState('')
   const [hidden, setHidden] = useState(false)
 
   function handleNavBar() {
@@ -23,40 +22,32 @@ export function NavBar() {
         <img src={Logo} alt="Logo of the project" />
         <li>
           <ul>
-            <Link
+            <NavLink
+              exact
               to="/"
-              onClick={() => {
-                setActive('home')
-                handleNavBar()
-              }}
-              className={active === 'home' ? 'active' : ''}
+              onClick={() => handleNavBar()}
+              activeClassName="active"
             >
               Home
-            </Link>
+            </NavLink>
           </ul>
           <ul>
-            <Link
+            <NavLink
               to="/about"
-              onClick={() => {
-                setActive('about')
-                handleNavBar()
-              }}
-              className={active === 'about' ? 'active' : ''}
+              onClick={() => handleNavBar()}
+              activeClassName="active"
             >
               About
-            </Link>
+            </NavLink>
           </ul>
           <ul>
-            <Link
+            <NavLink
               to="/projects"
-              onClick={() => {
-                setActive('projects')
-                handleNavBar()
-              }}
-              className={active === 'projects' ? 'active' : ''}
+              onClick={() => handleNavBar()}
+              activeClassName="active"
             >
               Projects
-            </Link>
+            </NavLink>
           </ul>
         </li>
         <Socials>
