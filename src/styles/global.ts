@@ -65,16 +65,14 @@ export const GlobalStyle = createGlobalStyle`
 
   &::-webkit-scrollbar {
     background: var(--brown-color);
+    width: 8px;
+    height: 0;
+    scrollbar-width: 8px;
   }
 
   &::-webkit-scrollbar-thumb {
     background: var(--secondary-color);
-    border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-  }
-
-  &::-webkit-scrollbar-track-piece {
-    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
   }
 
   .divider-1 {
