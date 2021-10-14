@@ -1,17 +1,17 @@
 import { Footer } from '../Footer'
 
 import { IoLogoGithub, IoLink } from 'react-icons/io5'
-import { Container, ProjectsContainer } from './styles'
+import { Container, Project, ProjectsContainer } from './styles'
 
 export function Projects() {
   return (
     <Container>
       <h1>Personal projects</h1>
       <ProjectsContainer>
-        <div className="project orangespace">
+        <Project className="orangespace">
           <h2>
             Orange-space
-            <div>
+            <div className="links">
               <a
                 href="https://github.com/gabrlcj/squad4-frontend"
                 target="_blank"
@@ -29,24 +29,26 @@ export function Projects() {
             </div>
           </h2>
           <p>Project made in the FCamara hackathon.</p>
-        </div>
-        <div className="project dtmoney">
+        </Project>
+        <Project className="dtmoney">
           <h2>
             dt-money
-            <a
-              href="https://github.com/gabrlcj/dt.money"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <IoLogoGithub />
-            </a>
+            <div className="links">
+              <a
+                href="https://github.com/gabrlcj/dt.money"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <IoLogoGithub />
+              </a>
+            </div>
           </h2>
           <p>A financial tracking app.</p>
-        </div>
-        <div className="project popularrepos">
+        </Project>
+        <Project className="popularrepos">
           <h2>
             Popular Repos
-            <div>
+            <div className="links">
               <a
                 href="https://github.com/gabrlcj/Popular-repos"
                 target="_blank"
@@ -64,24 +66,33 @@ export function Projects() {
             </div>
           </h2>
           <p>The most popular repositories on Github.</p>
-        </div>
-        <div className="project randomquotes">
+        </Project>
+        <Project className="animequotes">
           <h2>
-            RandomQuotes
-            <a
-              href="https://github.com/gabrlcj/Random-quotes"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <IoLogoGithub />
-            </a>
+            AnimeQuotes
+            <div className="links">
+              <a
+                href="https://github.com/gabrlcj/Random-quotes"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <IoLogoGithub />
+              </a>
+              <a
+                href="https://worldofanimequotes.netlify.app/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <IoLink />
+              </a>
+            </div>
           </h2>
-          <p>A generator of random quotes using a API.</p>
-        </div>
-        <div className="project barbershop">
+          <p>A generator of random anime quotes using a API.</p>
+        </Project>
+        <Project className="barbershop">
           <h2>
             Barber Shop
-            <div>
+            <div className="links">
               <a
                 href="https://github.com/gabrlcj/Barber-Shop"
                 target="_blank"
@@ -99,11 +110,11 @@ export function Projects() {
             </div>
           </h2>
           <p>Website for a barbershop.</p>
-        </div>
-        <div className="project calculator">
+        </Project>
+        <Project className="calculator">
           <h2>
             Calc
-            <div>
+            <div className="links">
               <a
                 href="https://github.com/gabrlcj/calculator-app"
                 target="_blank"
@@ -121,7 +132,7 @@ export function Projects() {
             </div>
           </h2>
           <p>Calculator with different themes.</p>
-        </div>
+        </Project>
       </ProjectsContainer>
       <div className="divider-1"></div>
       <Footer />

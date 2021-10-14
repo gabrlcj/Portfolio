@@ -4,49 +4,65 @@ import Calculator from '../../assets/projects-background/calculator.png'
 import dtmoney from '../../assets/projects-background/dtmoney.png'
 import OrangeSpace from '../../assets/projects-background/orange-space.png'
 import PopularRepos from '../../assets/projects-background/popular-repos.png'
-import RandomQuote from '../../assets/projects-background/random-quotes.png'
+import AnimeQuotes from '../../assets/projects-background/animequotes.png'
+import { FadeIn } from '../../styles/animations'
 
 export const Container = styled.main`
   padding: 2rem;
   text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
-  animation: fadeIn 3s forwards;
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
+  animation: ${FadeIn} 3s forwards;
 
   h1 {
     font-size: 3rem;
     color: var(--primary-color);
     margin: 2rem 0 3rem 3rem;
   }
+`
+
+export const ProjectsContainer = styled.section`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 25rem);
+  gap: 2rem;
+
+  text-overflow: clip;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+
+  @media (max-width: 1080px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 25rem);
+  }
+`
+
+export const Project = styled.div`
+  border-radius: 1rem;
 
   h2 {
-    color: var(--white-color);
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 0.95rem 0.95rem 0 0;
-    padding: 0.5rem;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    a {
-      color: var(--white-color);
+    color: var(--white-color);
+    padding: 0.75rem;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 1rem 1rem 0 0;
 
-      svg {
-        font-size: 2rem;
-        margin-right: 0.5rem;
-        transition: transform ease 0.3s;
+    .links {
+      display: flex;
+      gap: 1rem;
 
-        &:hover {
-          transform: translateY(-15%);
+      a {
+        color: var(--white-color);
+
+        svg {
+          font-size: 2rem;
+          transition: transform ease 0.3s;
+
+          &:hover {
+            transform: translateY(-15%);
+          }
         }
       }
     }
@@ -54,132 +70,51 @@ export const Container = styled.main`
 
   p {
     color: var(--alternative-color);
-    background: rgba(0, 0, 0, 0.8);
     text-decoration: underline;
     font-weight: 700;
     padding: 0 0.5rem;
-  }
-`
-
-export const ProjectsContainer = styled.section`
-  text-overflow: clip;
-  padding: 2rem;
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 1rem;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 25rem);
-  gap: 2rem;
-
-  @media (max-width: 1080px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 25rem);
+    background: rgba(0, 0, 0, 0.75);
   }
 
-  .project {
-    border-radius: 1rem;
+  &.orangespace {
+    background: url(${OrangeSpace}) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: ${FadeIn} 2s forwards;
+  }
 
-    &.orangespace {
-      background: url(${OrangeSpace}) no-repeat;
-      background-size: cover;
-      background-position: center;
-      animation: fadeIn 2s forwards;
+  &.dtmoney {
+    background: url(${dtmoney}) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: ${FadeIn} 2s forwards;
+  }
 
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
+  &.popularrepos {
+    background: url(${PopularRepos}) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: ${FadeIn} 2.5s forwards;
+  }
 
-        100% {
-          opacity: 1;
-        }
-      }
-    }
+  &.animequotes {
+    background: url(${AnimeQuotes}) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: ${FadeIn} 2.5s forwards;
+  }
 
-    &.dtmoney {
-      background: url(${dtmoney}) no-repeat;
-      background-size: cover;
-      background-position: center;
-      animation: fadeIn 2s forwards;
+  &.barbershop {
+    background: url(${BarberShop}) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: ${FadeIn} 3s forwards;
+  }
 
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
-
-        100% {
-          opacity: 1;
-        }
-      }
-    }
-
-    &.popularrepos {
-      background: url(${PopularRepos}) no-repeat;
-      background-size: cover;
-      background-position: center;
-      animation: fadeIn 2.5s forwards;
-
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
-
-        100% {
-          opacity: 1;
-        }
-      }
-    }
-
-    &.randomquotes {
-      background: url(${RandomQuote}) no-repeat;
-      background-size: cover;
-      background-position: center;
-      animation: fadeIn 2.5s forwards;
-
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
-
-        100% {
-          opacity: 1;
-        }
-      }
-    }
-
-    &.barbershop {
-      background: url(${BarberShop}) no-repeat;
-      background-size: cover;
-      background-position: center;
-      animation: fadeIn 3s forwards;
-
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
-
-        100% {
-          opacity: 1;
-        }
-      }
-    }
-
-    &.calculator {
-      background: url(${Calculator}) no-repeat;
-      background-size: cover;
-      background-position: center;
-      animation: fadeIn 3s forwards;
-
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
-
-        100% {
-          opacity: 1;
-        }
-      }
-    }
+  &.calculator {
+    background: url(${Calculator}) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: ${FadeIn} 3s forwards;
   }
 `

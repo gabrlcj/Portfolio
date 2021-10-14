@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { FadeIn, Float1 } from '../../styles/animations'
 
 export const Container = styled.main`
   display: flex;
@@ -9,7 +10,7 @@ export const Container = styled.main`
   min-height: 100vh;
   padding: 2rem;
   line-height: 2.5rem;
-  animation: fadeIn 3s forwards;
+  animation: ${FadeIn} 3s forwards;
 
   @media (max-width: 1080px) {
     gap: 5rem;
@@ -18,16 +19,6 @@ export const Container = styled.main`
 
   @media (max-width: 720px) {
     justify-content: start;
-  }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
   }
 
   .img-content {
@@ -42,22 +33,10 @@ export const Container = styled.main`
       border: 3px solid var(--white-color);
       filter: saturate(115%);
       box-shadow: 0 0 0.5rem 0.35rem rgba(255, 255, 255, 0.2);
-      animation: float1 3s infinite;
+      animation: ${Float1} 3s infinite;
 
       @media (max-width: 1080px) {
         width: 15rem;
-      }
-
-      @keyframes float1 {
-        0% {
-          transform: translate(0, 0);
-        }
-        50% {
-          transform: translate(0, 0.5rem);
-        }
-        100% {
-          transform: translate(0, 0);
-        }
       }
     }
   }

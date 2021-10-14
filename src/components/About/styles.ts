@@ -1,19 +1,10 @@
 import styled from 'styled-components'
+import { FadeIn, Float2 } from '../../styles/animations'
 
 export const Container = styled.main`
   padding: 2rem;
   line-height: 2.5rem;
-  animation: fadeIn 3s forwards;
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
+  animation: ${FadeIn} 3s forwards;
 
   h1 {
     font-size: 3rem;
@@ -57,22 +48,10 @@ export const ApresentationBox = styled.div`
     img {
       margin-top: 1rem;
       width: 25rem;
-      animation: float2 3s infinite;
+      animation: ${Float2} 3s infinite;
 
       @media (max-width: 1080px) {
         width: 20rem;
-      }
-
-      @keyframes float2 {
-        0% {
-          transform: translate(0, 0.5rem);
-        }
-        50% {
-          transform: translate(0.5rem, 0);
-        }
-        100% {
-          transform: translate(0, 0.5rem);
-        }
       }
     }
 
