@@ -37,8 +37,8 @@ export function About() {
           </div>
         </section>
         <h3>
-          With you wanna contact me you can by my email on the navigation bar,
-          or by my social medias on the navigation bar too.
+          If you wanna contact me you can by my email on the navigation bar, or
+          by my social medias on the navigation bar too.
         </h3>
       </ApresentationBox>
       <div className="divider-1"></div>
